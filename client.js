@@ -7,12 +7,11 @@ const connect = function () {
   });
   conn.on("connect", () => {
     console.log('Connected successfully');
-    conn.write('Name: SDD')
+    conn.write('Name: SAD')
   });
   conn.on("data", (data) => {
     console.log(data);
   });
-
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
